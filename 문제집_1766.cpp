@@ -1,6 +1,6 @@
 //BOJ 1766 문제집
 //위상정렬 기본문제
-//priority queue(min heap) 활용
+//priority queue + min heap 활용
 
 #include <iostream>
 #include <vector>
