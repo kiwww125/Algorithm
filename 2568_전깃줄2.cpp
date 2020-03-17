@@ -10,7 +10,7 @@
 //2. LIS 실제 추적 과정 : 여분의 배열 사용하여 추적
 //pair<int,int> ans 배열을 사용해 arr[ind]가 실제 LIS에서 삽입될 수 있는 위치와 그 ind를 함께 저장한다.
 //ans 배열의 first 에는 주어진 arr배열에서의 ind가 존재하며 second 에는  실제 LIS에서 삽입될 수 있는 위치가 존재한다.
-//실제 추적 시, ans의 맨 뒤에서 
+//실제 추적 시, ans의 맨 뒤에서  
 
 #include <iostream>
 #include <vector>
