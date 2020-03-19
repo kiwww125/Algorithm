@@ -34,6 +34,7 @@ int setdir(int block, int dir) {
         if (dir == EAST) return NORTH;
         else if (dir == SOUTH) return WEST;
     }
+    //되돌아 나오는 경우
     return -1;
 }
 
@@ -66,7 +67,7 @@ void simul(int r, int c, int d, int size, const vector<vector<int>> &board, cons
         nr += dr[dir], nc += dc[dir];
     } while (nr != r || nc != c);
 
-    //벽에 부딪힌 경우
+    //반대 방향으로 되돌아 나온 경우
     if (nr != r && nc != c) ans = max(2 * ret - 1, ans);
     //자기 자리 돌아온경우
     else ans = max(ret, ans);
